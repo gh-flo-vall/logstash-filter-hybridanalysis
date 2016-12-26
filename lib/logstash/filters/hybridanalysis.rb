@@ -7,11 +7,11 @@ require "json"
 # message field with whatever you specify in the configuration.
 #
 # It is only intended to be used as an .
-class LogStash::Filters::Passivetotal < LogStash::Filters::Base
+class LogStash::Filters::Hybridanalysis < LogStash::Filters::Base
 
   config_name "hybridanalysis"
   
-  #For apikey and username, report to the page: https://www.passivetotal.org/account_settings 
+  #For apikey and username, report to the page: https://www.hybrid-analysis.com/my-account?tab=%23api-key-tab 
   config :apikey, :validate => :string, :required => true
   config :secret, :validate => :string, :required => true
   config :field, :validate => :string, :required => true
